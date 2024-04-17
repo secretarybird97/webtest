@@ -1,0 +1,28 @@
+/*TODO: Make color palette */
+
+:root {
+  --color-primary: #f9ed69;
+  --color-secondary: #f08a5d;
+  --color-tertiary: #b83b5e;
+  --color-quaternary: #6a2c70;
+  --color-quinary: #1e1f26;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.hero {
+  background-image: url(assets/coverimage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  position: relative;
+}
