@@ -1,16 +1,30 @@
 /*TODO: Make color palette */
 
 :root {
-  --color-primary: #f9ed69;
-  --color-secondary: #f08a5d;
-  --color-tertiary: #b83b5e;
-  --color-quaternary: #6a2c70;
-  --color-quinary: #1e1f26;
+  --color-primary: #db924b;
+  --color-secondary: #263e3f;
+  --color-accent: #10576d;
+  --color-neutral: #120c12;
+  --color-base-100: #20161f;
+  --color-base-content: #c59f60;
+  --color-base-info: #8dcac1;
+  --color-base-success: #9db787;
+  --color-base-warning: #ffd25f;
+  --color-base-error: #fc9581;
 }
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-neutral);
+  color: var(--color-base-content);
 }
 
 *,
@@ -19,10 +33,67 @@ html {
   box-sizing: inherit;
 }
 
-.hero {
-  background-image: url(assets/coverimage.jpg);
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.welcome-container .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-primary);
+}
+
+.hero-image {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 450px;
+  height: 700px;
+  width: 66%;
   position: relative;
+  border-radius: 20px;
+  margin: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 300px;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+header p {
+  font-size: 1.8rem;
+  color: var(--color-base-content);
+  margin: 0;
+  font-style: italic;
+}
+
+.navbar {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 600;
+  padding: 3rem;
+  text-align: center;
 }
