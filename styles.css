@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: "Noto", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 1.6rem;
   margin: 0;
   padding: 0;
@@ -130,6 +130,16 @@ header p {
   margin-bottom: 1rem;
 }
 
+.card .content footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .content a {
+  color: var(--color-base-info);
+}
+
 .frontpage-content {
   width: 100%;
   gap: 1rem;
@@ -141,4 +151,79 @@ header p {
   .frontpage-content {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer .socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .socials svg {
+  width: 30px;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row-reverse;
+  gap: 2rem;
+}
+
+.article img {
+  border-radius: 5pt;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 32%;
+}
+
+.article .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #c9c8c9;
+  width: 30%;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.articles hr {
+  width: 80%;
+  border: 1.5px solid var(--color-base-100);
+}
+
+.btn {
+  font-size: 1rem /* 16px */;
+  line-height: 1.5rem /* 24px */;
+  padding-left: 1.25rem /* 20px */;
+  padding-right: 1.25rem /* 20px */;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  white-space: nowrap;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  color: var(--color-base-100);
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
 }
